@@ -8,13 +8,6 @@
     "baseUrl": "./",
     "rootDir": "./", 
     "outDir": "./build",                                    
-//    "paths": {
-//        "#src/*": ["./src/*.js"],
-//        "#routes/*": ["./src/routes/*.js"],
-//        "#middlewares/*": ["./src/middlewares/*.js"],
-//        "#controllers/*": ["./src/controllers/*.js"],
-//        "#services/*": ["./src/services/*.js"],
-//    },
     "types": ["@types/node"],
     "experimentalDecorators": true,                 
     "emitDecoratorMetadata": true,                                 
@@ -36,10 +29,6 @@
     "noUnusedParameters": true,                      
     "skipLibCheck": true,                               
   },
-//  "ts-node": {
-//    "esm": true,
-//    "experimentalSpecifierResolution": "node"
-//  },
   "exclude": [
     "node_modules",
     "dist"

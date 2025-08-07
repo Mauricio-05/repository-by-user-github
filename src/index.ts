@@ -1,10 +1,10 @@
 import express from "express";
 import morgan from "morgan";
 
-import environmentConfig from "./config"
+import environmentConfig from "./config";
 import router from "./routes/index.route";
 
-import { errorHandlerMiddleware } from "./middlewares/error_handler.middleware.js";
+import { errorHandlerMiddleware } from "./middlewares/error-handler.middleware.js";
 
 const app = express();
 
