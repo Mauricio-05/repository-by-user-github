@@ -2,10 +2,9 @@ import axios from "axios";
 
 import environmentConfig from "../config";
 
-import { GithubService } from "../types/github.type";
+import { GithubService } from "./github.service";
 
-class GithubServiceImpl implements GithubService {
-
+class GithubHttpService implements GithubService {
   async getTop10PopularRepositoryByUser(userName: string): Promise<any> {
     const perPage = 100;
     const repos = [];
@@ -34,7 +33,7 @@ class GithubServiceImpl implements GithubService {
     }
     repos.sort(
       (repositoryOne, repositoryTwo) =>
-          repositoryTwo.stargazers_count - repositoryOne.stargazers_count
+        repositoryTwo.stargazers_count - repositoryOne.stargazers_count
     );
 
     const popularRepos = repos.slice(0, 10);
@@ -51,4 +50,4 @@ class GithubServiceImpl implements GithubService {
   }
 }
 
-export default GithubServiceImpl;
+export default GithubHttpService;
