@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx --env-file=.env --watch src/index.ts"
+    "dev": "tsx --env-file=.env --watch src/index.ts",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +20,6 @@
     "husky": "^9.1.7",
     "tsx": "^4.11.0",
     "typescript": "^5.4.5"
-  },
-  "husky": {
-     "hooks": {
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-     }
   },
   "dependencies": {
     "axios": "^1.7.2",
